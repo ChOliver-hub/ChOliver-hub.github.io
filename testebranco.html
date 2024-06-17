@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="shortcut icon" href="https://www.sedeme.pa.gov.br/sites/default/files/favicon-16x16.ico" type="image/vnd.microsoft.icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISITAÇÃO</title>
+</head>
+<style> 
+
+    body { 
+
+        background-color: white; 
+
+        color: white; 
+
+        font-family: Arial, sans-serif; 
+
+        margin: 0; 
+
+        padding: 0; 
+
+        display: flex; 
+
+        flex-direction: column; 
+
+        align-items: center; 
+
+        height: 100vh; 
+
+    }  
+
+    .container { 
+
+        display: flex; 
+
+        width: 90%; 
+
+        max-width: 10000px; 
+
+        margin-top: 20px; 
+
+        flex: 1; /* Adicionado para preencher a altura disponível */ 
+
+        align-items: stretch; /* Garante que as caixas se estendam igualmente */ 
+
+    } 
+
+    .header { 
+
+width: 100%; 
+
+background-color: #1C4E80; 
+
+padding: 10px 20px; 
+
+text-align: center; 
+
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+
+margin-top: 20px; 
+
+}
+
+    .left, .right { 
+
+        flex: 1; 
+
+        padding: 20px; 
+
+        background-color: #1C4E80; 
+
+        border-radius: 10px; 
+
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+
+        margin: 0 10px; 
+
+        display: flex; 
+
+        flex-direction: column; 
+
+    } 
+
+    .left h1, .right h1 { 
+
+        font-size: 24px; 
+
+        margin-bottom: 20px; 
+
+        text-align: center; 
+
+    } 
+
+    .left form { 
+
+        display: flex; 
+
+        flex-direction: column; 
+
+        align-items: center; 
+
+        flex: 1; 
+
+    } 
+
+    .left form input[type="text"], .left form input[type="submit"] { 
+
+        width: 80%; 
+
+        padding: 10px; 
+
+        margin: 10px 0; 
+
+        border-radius: 5px; 
+
+        border: none; 
+
+    } 
+
+    .left form input[type="submit"] { 
+
+        background-color: #007bff; 
+
+        color: white; 
+
+        cursor: pointer; 
+
+        transition: background-color 0.3s ease; 
+
+    } 
+
+    .left form input[type="submit"]:hover { 
+
+        background-color: #0056b3; 
+
+    } 
+
+
+
+    .company-list { 
+
+        list-style-type: none; 
+
+        padding: 0; 
+
+    } 
+
+    .company-item { 
+
+        margin: 10px 0; 
+
+        padding: 10px; 
+
+        background-color: #0B3B61; 
+
+        border-radius: 5px; 
+
+    } 
+
+    .select-btn { 
+
+        background-color: #007bff; 
+
+        color: white; 
+
+        border: none; 
+
+        padding: 10px 20px; 
+
+        border-radius: 5px; 
+
+        cursor: pointer; 
+
+        margin-top: 20px; 
+
+    } 
+
+    .select-btn:hover { 
+
+        background-color: #0056b3; 
+
+    } 
+
+    .button-container {
+            margin-top: 20px; text-align: center;
+        }
+
+        .button {
+            padding: 12px 24px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            margin: 10px;
+            transition: background-color 0.3s ease;
+            
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+</style> 
+
+
+<body>
+  <header id="navbar" role="banner" class="navbar container-fluid navbar-default">
+    
+    <div class="container">
+      <div class="navbar-header">
+        <div class="col-sm-7 col-lg-7 col-xs-12">
+                      <a class="logo navbar-btn pull-left" href="/">
+              <img src="https://www.sedeme.pa.gov.br/sites/default/files/sedeme-logo_0.png"/>
+            </a>
+                                
+                  </div>
+        
+        
+</header>
+    <div class="header"> 
+
+        <h2>Envio de documentos de projetos à SEDEME-SECOP</h2> 
+
+    </div>
+    
+    <div class="container"> 
+
+        <div class="left"> 
+
+            <h1>FALE-NOS MAIS SOBRE VOCÊ!</h1> 
+
+            <div class="button-container">
+                <a href="file:///C:/Users/cristian.secop/Documents/testeteste/HTML/modelousu%C3%A1rio.html" target="_blank">
+                    <button class="button">Usuário</button>
+                </a>
+        
+                <a href="file:///C:/Users/cristian.secop/Documents/testeteste/HTML/modeloservidor.html" target="_blank">
+                    <button class="button">Servidor</button>
+                </a>
+            </div> 
+
+        </div> 
+
+    </div>
+    <div class="h-pb-2 h-pt-2 justify-content-center primary l700 position-relative w-100 position-absolute"
+         id="submenu">
+      <div class="container d-flex w-100 align-items-center height-16px justify-content-between">
+        <div class="d-flex">
+                        <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                                hover-opacity-6"
+              >
+                          <a href="file:///C:/Users/cristian.secop/Documents/testeteste/HTML/cad.html#" data-wpel-link="internal" rel="follow">Testes.www</a>
+                      </span>
+                        <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                                hover-opacity-6"
+              >
+                          <a href="https://www.sedeme.pa.gov.br/" data-wpel-link="internal" rel="follow">Sedeme</a>
+                      </span>
+                        <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                                hover-opacity-6"
+              >
+                          <a href="https://www.semas.pa.gov.br/wp-content/uploads/2015/11/legislacao/estadual/dc2001_c4676.pdf" data-wpel-link="internal" rel="follow">Do Regulamento ICMS</a>
+                      </span>
+                        <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                                hover-opacity-6"
+              >
+                          <a href="https://www.sefa.pa.gov.br/" data-wpel-link="internal" rel="follow">Secretaria da Fazenda</a>
+                      </span>
+                        <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                                hover-opacity-6"
+              >
+                          <a href="" data-wpel-link="internal" rel="follow">Outros</a>
+                      </span>
+                        <span class="ml-0-md mr-40-md d-block transition-all-3 letter-spacing-1px text-nowrap
+                                hover-opacity-6"
+              >
+                          <a href="" data-wpel-link="internal" rel="follow">Outros</a>
+                      </span>
+                  </div>
+                    <div class="d-flex align-items-center">
+                  <form id="searchbox" method="get" action=""
+                        role="search" class="w-100"
+                  >
+                    <input
+                        class="label text-content-grey w-100 mr-20 pr-40"
+                        id="s" name="s" type="text"
+                        placeholder="Search"
+                        value=""
+                    />
+                  </form>
+  
+              
+            </div>
+            
+    </div>
+    <Br>
+        <div
+            class="social-container d-flex d-xl-none">
+            <a class="social-link text-light-black cursor-pointer d-flex align-items-center justify-content-center">
+              <svg width="28" height="28" class="link" viewBox="0 0 28 14" onclick="copyToClipboard('www.hostinger.com/tutorials/website/how-to-add-image-or-logo-to-your-website');linkClick(event)" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.364 0.5C2.85 0.5 0 3.41 0 7C0 10.59 2.85 13.5 6.364 13.5H11.454V10.9H6.364C4.254 10.9 2.545 9.154 2.545 7C2.545 4.846 4.255 3.1 6.364 3.1H11.454V0.5H6.364V0.5ZM16.545 0.5V3.1H21.636C23.746 3.1 25.455 4.846 25.455 7C25.455 9.154 23.745 10.9 21.636 10.9H16.546V13.5H21.636C25.15 13.5 28 10.59 28 7C28 3.41 25.15 0.5 21.636 0.5H16.546H16.545ZM7.636 5.7V8.3H20.364V5.7H7.636Z"/>
+              </svg>
+              <div id="copyLink" style="display: none;" class="copy-link">Copy link</div>
+              <div id="copiedLink" style="display: none;" class="copied-link">Copied!</div>
+            </a>
+            <a href="https://twitter.com/intent/tweet?text=How to Insert an Image in HTML in 6 Easy Steps&amp;url=www.hostinger.com/tutorials/website/how-to-add-image-or-logo-to-your-website" class="social-link" target="_blank" rel="noopener noreferrer follow" data-wpel-link="internal">
+              <svg width="28" height="28" class="twitter" viewBox="0 0 28 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M28 3.222C26.97 3.685 25.862 3.996 24.7 4.137C25.9034 3.4078 26.801 2.26638 27.226 0.925C26.0996 1.60097 24.8652 2.07794 23.577 2.335C23.0427 1.75645 22.3944 1.29475 21.673 0.978948C20.9515 0.663145 20.1725 0.500076 19.385 0.5C16.212 0.5 13.641 3.1 13.641 6.306C13.641 6.761 13.693 7.206 13.789 7.629C9.016 7.387 4.784 5.075 1.95 1.56C1.43967 2.44841 1.17205 3.45545 1.174 4.48C1.17133 5.43314 1.40284 6.37235 1.84817 7.21507C2.2935 8.05778 2.93903 8.7782 3.728 9.313C2.81494 9.28354 1.92242 9.03451 1.126 8.587V8.66C1.126 11.474 3.106 13.82 5.734 14.353C4.8886 14.5858 4.00082 14.62 3.14 14.453C3.871 16.76 5.993 18.439 8.506 18.486C7.31857 19.431 5.95501 20.1305 4.49471 20.5435C3.0344 20.9566 1.50652 21.075 0 20.892C2.62075 22.596 5.68001 23.502 8.806 23.5C19.372 23.5 25.148 14.652 25.148 6.98C25.1481 6.72925 25.1428 6.47852 25.132 6.228C26.2588 5.40415 27.23 4.38627 28 3.222V3.222Z"/>
+              </svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=www.hostinger.com/tutorials/website/how-to-add-image-or-logo-to-your-website" class="social-link" target="_blank" rel="noopener noreferrer follow" data-wpel-link="internal">
+              <svg width="28" height="28" class="facebook" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3307_57195)">
+                  <path d="M24.889 1.60787e-07H3.11C2.7015 1.39669e-07 2.29701 0.0804758 1.91962 0.23683C1.54224 0.393185 1.19935 0.622355 0.910544 0.911252C0.621741 1.20015 0.392681 1.54311 0.236448 1.92055C0.0802144 2.29799 -0.000131188 2.70251 1.60787e-07 3.111V24.89C1.39669e-07 25.2985 0.0804758 25.703 0.23683 26.0804C0.393185 26.4578 0.622355 26.8007 0.911252 27.0895C1.20015 27.3783 1.54311 27.6073 1.92055 27.7636C2.29799 27.9198 2.70251 28.0001 3.111 28H14.966V17.172H11.321V12.932H14.966V9.815C14.966 6.2 17.176 4.229 20.403 4.229C21.4898 4.22651 22.5759 4.28092 23.657 4.392V8.172H21.436C19.678 8.172 19.336 9.003 19.336 10.229V12.928H23.536L22.99 17.167H19.31V28H24.889C25.2976 28.0001 25.7022 27.9198 26.0797 27.7635C26.4572 27.6072 26.8002 27.378 27.0891 27.0891C27.378 26.8002 27.6072 26.4572 27.7635 26.0797C27.9198 25.7022 28.0001 25.2976 28 24.889V3.11C28 2.7015 27.9195 2.29701 27.7632 1.91962C27.6068 1.54224 27.3776 1.19935 27.0887 0.910544C26.7999 0.621741 26.4569 0.392681 26.0795 0.236448C25.702 0.0802144 25.2975 -0.000131188 24.889 1.60787e-07Z"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_3307_57195">
+                    <rect width="28" height="28" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=www.hostinger.com/tutorials/website/how-to-add-image-or-logo-to-your-website" class="social-link" target="_blank" rel="noopener noreferrer follow" data-wpel-link="internal">
+              <svg width="28" height="28" class="linkedin h-p-0-lg h-mb-3-lg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3302_57044)">
+                  <path d="M24.889 1.60787e-07H3.11C2.7015 1.39669e-07 2.29701 0.0804758 1.91962 0.23683C1.54224 0.393185 1.19935 0.622355 0.910544 0.911252C0.621741 1.20015 0.392681 1.54311 0.236448 1.92055C0.0802144 2.29799 -0.000131188 2.70251 1.60787e-07 3.111V24.89C1.39669e-07 25.2985 0.0804758 25.703 0.23683 26.0804C0.393185 26.4578 0.622355 26.8007 0.911252 27.0895C1.20015 27.3783 1.54311 27.6073 1.92055 27.7636C2.29799 27.9198 2.70251 28.0001 3.111 28H24.89C25.2985 28 25.703 27.9195 26.0804 27.7632C26.4578 27.6068 26.8007 27.3776 27.0895 27.0887C27.3783 26.7999 27.6073 26.4569 27.7636 26.0795C27.9198 25.702 28.0001 25.2975 28 24.889V3.11C28 2.7015 27.9195 2.29701 27.7632 1.91962C27.6068 1.54224 27.3776 1.19935 27.0887 0.910544C26.7999 0.621741 26.4569 0.392681 26.0795 0.236448C25.702 0.0802144 25.2975 -0.000131188 24.889 1.60787e-07ZM9.333 21.778H5.41V10.888H9.334V21.778H9.333ZM7.302 8.893C6.102 8.893 5.302 8.093 5.302 7.026C5.302 5.959 6.1 5.16 7.433 5.16C8.633 5.16 9.433 5.96 9.433 7.026C9.433 8.094 8.633 8.893 7.301 8.893H7.302ZM23.333 21.778H19.535V15.826C19.535 14.18 18.522 13.801 18.142 13.801C17.762 13.801 16.497 14.054 16.497 15.826V21.778H12.572V10.888H16.497V12.408C17.002 11.522 18.015 10.888 19.914 10.888C21.814 10.888 23.334 12.408 23.334 15.826V21.778H23.333Z"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0_3302_57044">
+                    <rect width="28" height="28" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+            <a href="mailto:?subject=How to Insert an Image in HTML in 6 Easy Steps&amp;body=Article:%20www.hostinger.com/tutorials/website/how-to-add-image-or-logo-to-your-website" class="social-link" target="_blank" rel="nofollow noopener noreferrer">
+              <svg width="28" height="28" class="mail h-p-0-lg h-mb-3-lg" viewBox="0 0 28 28" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.8 3.00001C2.12163 2.99621 1.4654 3.24121 0.955496 3.68864C0.445591 4.13608 0.117389 4.7549 0.033 5.42801L14 14L27.967 5.42801C27.8826 4.7549 27.5544 4.13608 27.0445 3.68864C26.5346 3.24121 25.8784 2.99621 25.2 3.00001H2.8ZM0 8.15901V22.25C0 23.77 1.253 25 2.8 25H25.2C26.747 25 28 23.77 28 22.25V8.15901L14.741 16.296C14.5178 16.4323 14.2615 16.5043 14 16.5043C13.7385 16.5043 13.4822 16.4323 13.259 16.296L0 8.16001V8.15901Z"/>
+              </svg>
+            </a>
+        </div>
+</body>
+</html>
+

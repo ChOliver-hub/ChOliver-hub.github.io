@@ -1,0 +1,326 @@
+<!DOCTYPE html> 
+
+<html lang="pt-br"> 
+
+<head> 
+    <link rel="shortcut icon" href="https://www.sedeme.pa.gov.br/sites/default/files/favicon-16x16.ico" type="image/vnd.microsoft.icon" />
+
+    <meta charset="UTF-8"> 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <title>Cadastro de Empresas</title> 
+
+    <style> 
+
+        body { 
+
+            background-color: #0B3861; 
+
+            color: white; 
+
+            font-family: Arial, sans-serif; 
+
+            margin: 0; 
+
+            padding: 0; 
+
+            display: flex; 
+
+            flex-direction: column; 
+
+            align-items: center; 
+
+            height: 100vh; 
+
+        } 
+
+        .header { 
+
+            width: 100%; 
+
+            background-color: #1C4E80; 
+
+            padding: 10px 20px; 
+
+            text-align: center; 
+
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+
+            margin-top: 20px; 
+
+        } 
+
+        .header h2 { 
+
+            margin: 1; 
+
+        } 
+
+        .container { 
+
+            display: flex; 
+
+            width: 90%; 
+
+            max-width: 1200px; 
+
+            margin-top: 20px; 
+
+            flex: 1; /* Adicionado para preencher a altura disponível */ 
+
+            align-items: stretch; /* Garante que as caixas se estendam igualmente */ 
+
+        } 
+
+        .left, .right { 
+
+            flex: 1; 
+
+            padding: 20px; 
+
+            background-color: #1C4E80; 
+
+            border-radius: 10px; 
+
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); 
+
+            margin: 0 10px; 
+
+            display: flex; 
+
+            flex-direction: column; 
+
+        } 
+
+        .left h1, .right h1 { 
+
+            font-size: 24px; 
+
+            margin-bottom: 20px; 
+
+            text-align: center; 
+
+        } 
+
+        .left form { 
+
+            display: flex; 
+
+            flex-direction: column; 
+
+            align-items: center; 
+
+            flex: 1; 
+
+        } 
+
+        .left form input[type="text"], .left form input[type="submit"] { 
+
+            width: 80%; 
+
+            padding: 10px; 
+
+            margin: 10px 0; 
+
+            border-radius: 5px; 
+
+            border: none; 
+
+        } 
+
+        .left form input[type="submit"] { 
+
+            background-color: #007bff; 
+
+            color: white; 
+
+            cursor: pointer; 
+
+            transition: background-color 0.3s ease; 
+
+        } 
+
+        .left form input[type="submit"]:hover { 
+
+            background-color: #0056b3; 
+
+        } 
+
+ 
+
+        .company-list { 
+
+            list-style-type: none; 
+
+            padding: 0; 
+
+        } 
+
+        .company-item { 
+
+            margin: 10px 0; 
+
+            padding: 10px; 
+
+            background-color: #0B3B61; 
+
+            border-radius: 5px; 
+
+        } 
+
+        .select-btn { 
+
+            background-color: #007bff; 
+
+            color: white; 
+
+            border: none; 
+
+            padding: 10px 20px; 
+
+            border-radius: 5px; 
+
+            cursor: pointer; 
+
+            margin-top: 20px; 
+
+        } 
+
+        .select-btn:hover { 
+
+            background-color: #0056b3; 
+
+        } 
+
+    </style> 
+
+</head> 
+
+<body> 
+
+     
+
+    <div class="header"> 
+
+        <h2>Bem-vindo, Projetista XYZ</h2> 
+
+    </div> 
+
+     
+
+    <div class="container"> 
+
+        <div class="left"> 
+
+            <h1>Cadastro de Empresas</h1> 
+
+            <form action="#" method="post" id="cadastro-empresa-form"> 
+
+                <input type="text" id="nome-empresa" name="nome-empresa" placeholder="Nome da Empresa" required> 
+
+                <input type="text" id="cnpj-empresa" name="cnpj-empresa" placeholder="CNPJ" required> 
+
+                <input type="submit" value="Cadastrar Empresa"> 
+
+            </form> 
+
+        </div> 
+
+        <div class="right"> 
+
+            <h1>Selecione a Empresa</h1> 
+
+            <ul class="company-list"> 
+
+                <li class="company-item"> 
+
+                    <span>Empresa A</span> 
+
+                    <button class="select-btn" onclick="selecionarEmpresa('Empresa 1')">Selecionar</button> 
+                
+                </li> 
+
+                <li class="company-item"> 
+
+                    <span>Empresa B</span> 
+
+                    <button class="select-btn" onclick="selecionarEmpresa('Empresa 2')">Selecionar</button> 
+
+                </li> 
+
+                <li class="company-item"> 
+
+                    <span>Empresa C</span> 
+
+                    <button class="select-btn" onclick="selecionarEmpresa('Empresa 3')">Selecionar</button> 
+
+                </li> 
+
+                <!-- Adicione mais empresas conforme necessário --> 
+
+            </ul> 
+
+        </div> 
+
+    </div> 
+
+ 
+
+    <script> 
+
+        document.getElementById('cadastro-empresa-form').addEventListener('submit', function(event) { 
+
+            event.preventDefault(); 
+
+            const nomeEmpresa = document.getElementById('nome-empresa').value; 
+
+            const cnpjEmpresa = document.getElementById('cnpj-empresa').value; 
+
+            if (nomeEmpresa && cnpjEmpresa) { 
+
+                adicionarEmpresa(nomeEmpresa, cnpjEmpresa); 
+
+                document.getElementById('nome-empresa').value = ''; 
+
+                document.getElementById('cnpj-empresa').value = ''; 
+
+            } 
+
+        }); 
+
+ 
+
+        function adicionarEmpresa(nome, cnpj) { 
+
+            alert("Empresa " + nome + " com CNPJ " + cnpj + " cadastrada!"); 
+
+            // Aqui você pode adicionar a lógica para salvar a empresa em um banco de dados ou lista 
+
+        } 
+
+ 
+
+        function selecionarEmpresa(empresa) {
+        // Redirecionar para o link desejado ao selecionar a empresa
+        if (empresa === 'Empresa 1') {
+            window.location.href = "file:///C:/Users/cristian.secop/Documents/testeteste/HTML/cad.html";
+        } else if (empresa === 'Empresa 2') {
+            window.location.href = "file:///C:/Users/cristian.secop/Documents/testeteste/HTML/cad.html";
+        } else if (empresa === 'Empresa 3') {
+            window.location.href = "file:///C:/Users/cristian.secop/Documents/testeteste/HTML/cad.html";
+        };
+            // Aqui você pode redirecionar para a página de upload de documentos 
+
+            // Exemplo: window.location.href = "upload_documentos.html?empresa=" + encodeURIComponent(empresa); 
+
+        } 
+
+    </script> 
+
+</body> 
+
+</html> 
+
+ 
+ 
